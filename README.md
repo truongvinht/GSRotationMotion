@@ -15,5 +15,5 @@ motion.delegate = self;
 
 6. For stopping it call the "[motion stopDetect]"
 
-
+## It only works on device with gyroscope (minimum iOS 4 and tested on iOS 5) !!! ##
 
