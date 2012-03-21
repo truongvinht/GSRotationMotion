@@ -1,0 +1,8 @@
+.DS_Store
+DerivedData
+build
+ShakeMe.xcodeproj/*.pbxuser
+ShakeMe.xcodeproj/project.xcworkspace
+ShakeMe.xcodeproj/*.persp*
+ShakeMe.xcodeproj/xcuser*
+Thumbs.db
