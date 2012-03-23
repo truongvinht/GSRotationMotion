@@ -30,7 +30,7 @@
 typedef enum{
   GSRotationMotionDirectionUnknown,
   GSRotationMotionDirectionLeft,
-  GSRotationMotionDirectionRight
+  GSRotationMotionDirectionRight,
 }GSRotationMotionDirection;
 
 @protocol GSRotationMotionDelegate <NSObject>

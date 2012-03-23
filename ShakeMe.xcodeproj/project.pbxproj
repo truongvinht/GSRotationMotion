@@ -15,8 +15,8 @@
 		1E20A72C1519CC210080994D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20A72B1519CC210080994D /* AppDelegate.m */; };
 		1E20A72F1519CC210080994D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20A72E1519CC210080994D /* ViewController.m */; };
 		1E20A7321519CC210080994D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E20A7301519CC210080994D /* ViewController.xib */; };
-		1E20A73A1519CC7B0080994D /* GSRotationMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20A7391519CC7B0080994D /* GSRotationMotion.m */; };
 		1E20A73C1519D2970080994D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E20A73B1519D2970080994D /* CoreMotion.framework */; };
+		1E8EBA8C151C5E1600D7C235 /* GSRotationMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8EBA8B151C5E1600D7C235 /* GSRotationMotion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		1E20A72D1519CC210080994D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1E20A72E1519CC210080994D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1E20A7311519CC210080994D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		1E20A7381519CC7B0080994D /* GSRotationMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRotationMotion.h; sourceTree = "<group>"; };
-		1E20A7391519CC7B0080994D /* GSRotationMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRotationMotion.m; sourceTree = "<group>"; };
 		1E20A73B1519D2970080994D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1E8EBA8A151C5E1600D7C235 /* GSRotationMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRotationMotion.h; sourceTree = SOURCE_ROOT; };
+		1E8EBA8B151C5E1600D7C235 /* GSRotationMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRotationMotion.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +89,9 @@
 				1E20A72D1519CC210080994D /* ViewController.h */,
 				1E20A72E1519CC210080994D /* ViewController.m */,
 				1E20A7301519CC210080994D /* ViewController.xib */,
+				1E8EBA8A151C5E1600D7C235 /* GSRotationMotion.h */,
+				1E8EBA8B151C5E1600D7C235 /* GSRotationMotion.m */,
 				1E20A7221519CC210080994D /* Supporting Files */,
-				1E20A7381519CC7B0080994D /* GSRotationMotion.h */,
-				1E20A7391519CC7B0080994D /* GSRotationMotion.m */,
 			);
 			path = ShakeMe;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 				1E20A7281519CC210080994D /* main.m in Sources */,
 				1E20A72C1519CC210080994D /* AppDelegate.m in Sources */,
 				1E20A72F1519CC210080994D /* ViewController.m in Sources */,
-				1E20A73A1519CC7B0080994D /* GSRotationMotion.m in Sources */,
+				1E8EBA8C151C5E1600D7C235 /* GSRotationMotion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +283,7 @@
 				1E20A7371519CC210080994D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

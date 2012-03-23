@@ -54,8 +54,17 @@
   return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
--(void)finishedMotion{
-  NSLog(@"rotate me");
+- (void)finishedMotion:(GSRotationMotionDirection)direction{
+  
+  if (direction==GSRotationMotionDirectionRight) {
+    
+    NSLog(@"rotate me right");
+  }
+  
+  if (direction==GSRotationMotionDirectionLeft) {
+    
+    NSLog(@"rotate me left");
+  }
 }
 
 @end
