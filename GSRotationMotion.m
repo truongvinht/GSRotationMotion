@@ -114,7 +114,7 @@
                                 [self.lastCompleteRotateAt timeIntervalSinceNow]<-1*GSROTATIONMOTION_WAIT_DURATION)) {
         
         //trigger action
-        [self.delegate finishedMotion];
+        [self.delegate finishedMotion:GSRotationMotionDirectionRight];
         self.lastRotation = 0.0f;
         self.lastCompleteRotateAt = [NSDate date];
       }
@@ -132,7 +132,7 @@
       if (self.lastRotation>0.0f&&(!self.lastCompleteRotateAt||[self.lastCompleteRotateAt timeIntervalSinceNow]<-1*GSROTATIONMOTION_WAIT_DURATION)) {
         
         //trigger action
-        [self.delegate finishedMotion];
+        [self.delegate finishedMotion:GSRotationMotionDirectionLeft];
         
         self.lastRotation = 0.0f;
         self.lastCompleteRotateAt = [NSDate date];
