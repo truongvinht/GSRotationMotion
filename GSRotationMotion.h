@@ -26,13 +26,20 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
 
+//define Rotation direction
+typedef enum{
+  GSRotationMotionDirectionUnknown,
+  GSRotationMotionDirectionLeft,
+  GSRotationMotionDirectionRight
+}GSRotationMotionDirection;
+
 @protocol GSRotationMotionDelegate <NSObject>
 
-/** Method which will be called after motion is finished
+/** Method which will be called after motion is finished (replace finishedMotion method)
  
- @since 1.0
+ @since 1.0.1
  */
-- (void)finishedMotion;
+- (void)finishedMotion:(GSRotationMotionDirection)direction;
 
 @end
 
@@ -49,8 +56,16 @@
 
 /// @name Methods
 
+/** Method to start listening to shake roation
+ 
+ @since 1.0
+ */
 - (void)startDetect;
 
+/** Method to stop listening to shake roation
+ 
+ @since 1.0
+ */
 - (void)stopDetect;
 
 @end
